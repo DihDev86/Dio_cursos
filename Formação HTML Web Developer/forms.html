@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <!--A tag form é a tag que os dados do formulário ficam dentro-->
+    <h1>Formulário de preenchimento</h1>
+    <!--Podemos dar o nome que quisermos ao formulário por meio do atributo "name" que serve para ser usado pelo js-->
+    <!--O atributo action faz com que os dados sejam enviados para determinado servidor listado nele, não posso por exemplo enviar dados de um site para outro-->
+    <!--Method serve para não aparecer a senha quando abrirmos a pagina-->
+    <!--autocomplete="off" serve para não salvar as informções para preencher automaticamente-->
+    <!--onsubmit="alert('Enviado')" serve para adicionar código js-->
+
+    <form name="signup" onsubmit="alert('Formulário enviado')" method="post" action="#">
+        Nome:<input type="text" name="name"/><br> <!--Input = entrada de dados type texto / name = nome da caixa de entrada-->
+        Idade:<input type="number" name="age"/><br><!--Input = entrada de dados type números/ name...-->
+        Senha:<input type="password" name="password"/><br><!--Input= entrada de dados tipo password, dados de entradas são ocultados / name...-->
+        <button type ="submit">Enviar</button>
+        <!--Button type submit quer dizer que estamos submetendo os dados a serem enviados ao servidor-->
+
+    </form>
+    
+</body>
+</html>
