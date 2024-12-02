@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Select e seus tipos</title>
+</head>
+<body>
+    <!--A tag select serve para formulários onde temos opções pré-selecionadas.-->
+
+    <!--O nome é select box, que se trata de uma caixa de seleção-->
+
+    <form method="get">
+        <label>Nome:*</label><input type="text" name="name"><br><br>
+
+        <label>Cargo:*</label>
+        <select name="role">
+            <!--Option é  uma tag filha do select-->
+            <option value="">Selecione o cargo</option><!--Esse option sem value é para exibir o texto selecione o cargo.Ao clicar, todas as opções pré-selecionadas serão exibidas.-->
+
+            <option value="ajudante">Ajudante</option>
+            <option value="eletricista">Eletricista</option>
+            <option value="pedreiro">Pedreiro</option>
+            <option value="carpinteiro">Carpinteiro</option>
+            <option value="mecanico">Mecânico</option>
+            <option value="secretaria">Secretaria</option>
+
+            <!--O value é enviado para o servidor e o nome entre as tags é exibido para o usuário-->
+            
+        </select>
+        <br><br>
+        
+        <label>Mensagem:</label><textarea rows="10" cols="40" name="mensagem"></textarea><br><br><!--O textarea serve para criar uma caixa de texto, o atributo rows sever para delimitar o as linhas e o atributo cols é colunas, que também aumenta o tamanha da área do texto.-->
+
+        <label>Assunto:</label><input type="text" name="assunto" ><br><br>
+
+        <button type="reset">Limpar</button>
+        <button type="submit">Enviar</button>
+
+    </form>
+    
+</body>
+</html>

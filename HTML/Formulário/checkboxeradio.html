@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkbox e Radio</title>
+</head>
+<body>
+    <form method="get">
+        <h3>Você selecionou: pizza de calabreza</h3>
+        <p>Deseja adicionar mais algo?</p>
+        <input type="checkbox" name="opicional[]" value="Queijo"> + Queijo<br>
+        <input type="checkbox" name="opicional[]" value="Frango"> + Frango<br>
+        <input type="checkbox" name="opicional[]" value="Carne de sol"> + Carne de Sol<br>
+        <input type="checkbox" name="opicional[]" value="Camarão"> + Camarão<br>
+
+        <!--O input type checkbox é mais apropriado para situações onde temos que marca multiplas opções-->
+
+        <!--O atributo name opcional com [ ] coloca o que foi selecionado, ou seja, marcado dentro dos [ ] e envia para o servidor. Ele  funciona como uma lista.-->
+
+        <!--Existem dois valores no atributo method usado no form, que é o GET: Os dados são anexados à URL como uma string de consulta,É visível para o usuário no navegador. E o POST: Não ficam visíveis na URL.-->
+
+        <!--O atributo disable deixa a opção visivel, mas desabilitado para marcação.-->
+
+        <p>borda com recheio?</p>
+        <input type="radio" name="borda" value="sim">Sim<br>
+        <input type="radio" name="borda" value="nao">Não<br>
+
+
+        <!--O input type radio serve para situações onde temos que escolher uma única opção.-->
+
+        <!--Precisamos colocar os names iguais e os values diferentes, assim conseguimos selecionar somente um valor, porque o navegador entende que não podemos marcar a mesma coisa com valores diferentes-->
+
+        <p>Vai beber alguma coisas?</p>
+        <input type="radio" name="bebida" value="refrigerante"> Refrigerante<br>
+        <input type="radio" name="bebida" value="suco">Suco<br>
+        <input type="radio" name="bebida" value="vitamina">Vitaminda<br>
+        <input type="radio" name="bebida" value="agua">Água<br><br>
+
+        <input type="submit" name="enviar" value="enviar">
+
+
+
+
+
+
+
+
+
+    </form>
+    
+</body>
+</html>

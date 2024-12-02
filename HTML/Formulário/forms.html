@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+<body>
+    <form name="signup" onsubmit="alert('Formulário enviado!')" autocomplete="on" target="_blank" method="post" action="#">
+        Nome: <input type="text" name="name" /> <br>
+        Idade: <input type="number" name="age"/> <br>
+        Senha: <input type="password" name ="password"/> <br>
+        <button>Enviar</button>
+        
+    </form>
+    
+    <!--Esse código HTML cria um formulário simples com campos para nome, idade e senha, além de um botão de envio. Quando o formulário é enviado, um alerta aparece na tela com a mensagem "Formulário enviado!". Os dados do formulário são configurados para serem enviados via método POST, mas o destino ainda não foi especificado (indicado pelo action="#"). O formulário também suporta preenchimento automático dos campos.-->
+
+    <!-- Início do documento HTML -->
+<!-- <body> -->
+    <!-- Início do formulário HTML -->
+    <!-- <form 
+        name="signup"                   --> <!-- Define o nome do formulário para referência em scripts -->
+        <!-- onsubmit="alert('Formulário enviado!')" --> <!-- Evento acionado ao enviar o formulário, exibe um alerta -->
+        <!-- autocomplete="on"              --> <!-- Habilita o preenchimento automático dos campos -->
+        <!-- target="_blank"                --> <!-- Define que o destino do formulário será aberto em uma nova aba ou janela -->
+        <!-- method="post"                  --> <!-- Define o método de envio como POST, enviando os dados no corpo da requisição -->
+        <!-- action="#"                     --> <!-- Define o destino dos dados enviados, aqui está indefinido com "#" -->
+    <!-- > -->
+    
+        <!-- Campo de texto para o nome do usuário -->
+        <!-- Nome: <input 
+            type="text"                --> <!-- Define que o campo aceita texto -->
+            <!-- name="name"                --> <!-- Nome do campo usado na identificação dos dados -->
+        <!-- /> <br>                        --> <!-- Fecha o campo e adiciona uma quebra de linha -->
+
+        <!-- Campo numérico para a idade do usuário -->
+        <!-- Idade: <input 
+            type="number"              --> <!-- Define que o campo aceita apenas números -->
+            <!-- name="age"                 --> <!-- Nome do campo usado na identificação dos dados -->
+        <!-- /> <br>                        --> <!-- Fecha o campo e adiciona uma quebra de linha -->
+
+        <!-- Campo de senha para entrada segura -->
+        <!-- Senha: <input 
+            type="password"            --> <!-- Define que o campo oculta os caracteres digitados -->
+            <!-- name="password"            --> <!-- Nome do campo usado na identificação dos dados -->
+        <!-- /> <br>                        --> <!-- Fecha o campo e adiciona uma quebra de linha -->
+
+        <!-- Botão para enviar o formulário -->
+        <!-- <button>
+            Enviar                     --> <!-- Texto exibido no botão -->
+        <!-- </button> -->
+    
+    <!-- </form> -->
+
+    
+</body>
+</html>

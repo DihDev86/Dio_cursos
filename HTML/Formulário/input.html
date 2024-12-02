@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input</title>
+</head>
+<body>
+    <form>
+        <!--Label funciona como uma etiqueta onde exibiremos o nome do input-->
+        <label>Text:</label><input type="text"/><br> <!-- Esse é o input do tipo texto -->  
+        <label>Number:</label><input type="number" min="0" max="80" step="2"/><br> <!--Esse é o input do tipo number com um limite min/max e pulando de 2 em 2-->
+        <label>Range</label><input type="range" value="50" min="0" max="100"/><br> <!--Esse é o input range que cria um scroll horizontal, ele vem com um value de 50 onde tem limitação min/max-->
+        <label>Color:</label><input type="color"/><br><!--Esse é o input color, onde selecionamos uma paleta de cor-->
+        <label>Email:</label><input type="email"/><br><!--Esse é o input email que cria uma caixa onde devemos colocar o email, se o email não for colocado quando apertamos no submit aparecerá uma mensagem nos alertando que devemos preencher com email-->
+        <label>Url:</label><input type="url"/><br><!--Esse é o input url, ele funciona da mesma forma do email, mas precimos preencher com uma url-->
+        <label>Date:</label><input type="date"/><br><!--Esse é o input date, onde selecionamos o carlendario com a data do ano-->
+        <label>Week:</label><input type="week"/><br><!--Esse é o input week  onde selecionamos em que semana do ano estamos-->
+        <label>Month:</label><input type="month"/><br><!--Esse é o input month onde selecionamos o mês do ano-->
+        <label>Checkbox:</label><input type="checkbox"/></label><input type="checkbox"/><br><!--Aqui temos dois checkbox que são caixas para marcarção-->
+        <label>Radio</label><input type="radio" name="Aceitar"/><input type="radio" name="Aceitar"/><br><!--No input radio colocamos o label e em seguida os dois inputs, para selecionar um ou o outro precisamos do atributo name nos dois com o mesmo name -->
+        <label>Button</label><input type="submit"  value="Enviar"/><br> <!-- A mensagem indicando o que tem que ser digitado só aparece porque o input é type submit, por submitar a informação.-->
+        
+    </form>
+</body>
+</html>
