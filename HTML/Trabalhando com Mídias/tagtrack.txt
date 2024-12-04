@@ -1,0 +1,60 @@
+A tag **`<track>`** é usada dentro de elementos de mídia como **`<video>`** ou **`<audio>`** para adicionar faixas de texto associadas, como legendas, descrições, capítulos ou metadados. Ela melhora a acessibilidade e a experiência do usuário, especialmente em conteúdos audiovisuais.
+
+---
+
+### **Principais Atributos:**
+
+- **`kind`**: Define o tipo de faixa. Os valores comuns são:
+  - **`subtitles`**: Legendas traduzidas ou transcrições.
+  - **`captions`**: Legendas para acessibilidade (incluem sons e outros elementos contextuais).
+  - **`descriptions`**: Descrição de conteúdo visual.
+  - **`chapters`**: Marcadores de capítulos para navegação.
+  - **`metadata`**: Informações usadas por scripts.
+- **`src`**: Especifica o caminho para o arquivo da faixa (geralmente no formato `.vtt`).  
+- **`srclang`**: Indica o idioma da faixa, por exemplo, `"en"` para inglês ou `"pt"` para português.  
+- **`label`**: Um nome descritivo da faixa (exibido no menu de seleção).  
+- **`default`**: Indica que a faixa deve ser carregada automaticamente se nenhuma outra for especificada.
+
+---
+
+### **Exemplo de Uso com Vídeo:**
+
+<video controls width="640" height="360">
+    <source src="video.mp4" type="video/mp4">
+    <track src="legendas.vtt" kind="subtitles" srclang="pt" label="Português" default>
+    <track src="legendas-en.vtt" kind="subtitles" srclang="en" label="English">
+    Seu navegador não suporta vídeos.
+</video>
+```
+
+---
+
+### **Formato de Arquivo Comum:**
+O **`WebVTT`** (Web Video Text Tracks) é o formato mais utilizado para os arquivos referenciados no atributo `src` da tag `<track>`. Ele contém as legendas sincronizadas com o tempo.
+
+**Exemplo de arquivo `.vtt`:**
+```vtt
+WEBVTT
+
+00:00:00.000 --> 00:00:05.000
+Bem-vindo ao nosso tutorial!
+
+00:00:05.001 --> 00:00:10.000
+Neste vídeo, aprenderemos HTML básico.
+```
+
+---
+
+### **Aplicações Comuns:**
+- **Acessibilidade**: Adicionar legendas para pessoas com deficiência auditiva.  
+- **Suporte Multilíngue**: Oferecer legendas em diferentes idiomas.  
+- **Interatividade**: Criar capítulos ou descrições detalhadas sincronizadas com o vídeo.
+
+---
+
+### **Benefícios:**
+- Melhora a acessibilidade para pessoas com deficiências.  
+- Aumenta o alcance global do conteúdo com legendas em vários idiomas.  
+- Facilita a navegação em vídeos longos com capítulos.
+
+A tag **`<track>`** é essencial para fornecer uma experiência de mídia mais rica e inclusiva, adaptada a diferentes públicos e necessidades.

@@ -1,0 +1,34 @@
+A tag <video> no HTML é usada para incorporar vídeos diretamente em páginas da web, permitindo a reprodução sem a necessidade de plugins externos. Ela oferece controles de interação para os usuários e suporte a diversos formatos.
+
+Principais Atributos:
+
+src: Define o caminho do arquivo de vídeo.
+controls: Adiciona controles de reprodução (play, pause, volume, etc.).
+autoplay: Inicia automaticamente a reprodução do vídeo ao carregar a página.
+loop: Faz o vídeo se repetir continuamente.
+poster: Exibe uma imagem enquanto o vídeo não começa a ser reproduzido.
+muted: Começa o vídeo com o áudio desativado.
+Exemplo de Uso:
+
+<video src="video.mp4" controls width="640" height="360"></video>
+Formatos Suportados:
+Os navegadores suportam diferentes formatos de vídeo, sendo os mais comuns:
+
+MP4 (video/mp4): Amplamente compatível, utiliza o codec H.264.
+WebM (video/webm): Aberto e eficiente para a web.
+Ogg (video/ogg): Formato de código aberto.
+Uso com Fontes Alternativas:
+Para garantir compatibilidade, é possível fornecer várias fontes:
+
+
+<video controls width="640" height="360" poster="capa.jpg">
+    <source src="video.mp4" type="video/mp4">
+    <source src="video.webm" type="video/webm">
+    Seu navegador não suporta vídeos.
+</video>
+
+Aplicações Comuns:
+Reproduzir tutoriais, demonstrações ou trailers.
+Incorporar vídeos interativos em sites.
+Criar experiências multimídia dinâmicas.
+A tag <video> é uma ferramenta poderosa para integrar vídeos de forma nativa e eficiente, com suporte a diversos recursos interativos e compatibilidade com dispositivos modernos.

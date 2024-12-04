@@ -1,0 +1,63 @@
+A tag **`<iframe>`** é usada para incorporar outro conteúdo HTML dentro de uma página, como um site, vídeo, mapa ou aplicativo. Ela cria uma janela embutida que carrega conteúdo de uma URL específica.
+
+---
+
+### **Principais Atributos:**
+- **`src`**: Especifica o URL do conteúdo que será carregado no iframe.  
+- **`width`** e **`height`**: Define a largura e a altura da janela do iframe (em pixels ou porcentagem).  
+- **`title`**: Fornece uma descrição do iframe para acessibilidade.  
+- **`allow`**: Define permissões, como uso de câmera ou microfone no conteúdo embutido.  
+- **`sandbox`**: Restringe ações dentro do iframe para segurança (por exemplo, desabilitar execução de scripts).  
+- **`loading`**: Controla o carregamento do iframe:
+  - **`lazy`**: Carrega apenas quando estiver visível no viewport.
+  - **`eager`**: Carrega imediatamente.
+
+---
+
+### **Exemplo Simples:**
+```html
+<iframe src="https://www.exemplo.com" width="600" height="400" title="Site exemplo"></iframe>
+```
+
+---
+
+### **Exemplo de Uso com Vídeo (YouTube):**
+```html
+<iframe 
+    src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+    width="560" 
+    height="315" 
+    title="Vídeo do YouTube" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+    allowfullscreen>
+</iframe>
+```
+
+---
+
+### **Uso do Atributo `sandbox`:**
+O atributo `sandbox` melhora a segurança ao limitar as ações permitidas dentro do iframe. Por exemplo:
+- **`sandbox`**: Bloqueia scripts e outras funcionalidades.
+- **`allow-same-origin`**: Permite que o iframe compartilhe origem com a página pai.
+- **`allow-scripts`**: Permite a execução de scripts (mas não envio de formulários).
+- **Exemplo:**
+  ```html
+  <iframe src="https://www.exemplo.com" sandbox="allow-scripts allow-same-origin"></iframe>
+  ```
+
+---
+
+### **Aplicações Comuns:**
+- Incorporar vídeos (YouTube, Vimeo).  
+- Adicionar mapas interativos (Google Maps).  
+- Mostrar conteúdo externo, como widgets ou formulários.  
+- Criar pré-visualizações de documentos ou outras páginas web.
+
+---
+
+### **Cuidados ao Usar:**
+1. **Segurança:** Evite incluir iframes de fontes não confiáveis, pois podem representar riscos, como ataques de phishing. Use o atributo `sandbox` sempre que possível.  
+2. **SEO:** Conteúdo carregado dentro de iframes geralmente não é indexado pelos mecanismos de busca.  
+3. **Performance:** Iframes podem impactar o desempenho da página devido ao carregamento de conteúdo externo.
+
+A tag **`<iframe>`** é poderosa para incorporar conteúdo externo, mas deve ser usada com atenção para garantir segurança e desempenho.
