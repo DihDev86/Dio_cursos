@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag table</title>
+    <style>
+        table{
+            border: solid 1px lightgreen;
+        }
+        
+        table thead th{
+            background-color: black;
+            color: white;
+        }
+
+        table tfoot td{
+            background-color: lightgrey;
+        }
+
+        table tbody tr:nth-child(even){
+            background-color: rgb(187, 181, 181);
+        }
+
+        table tbody tr:hover{
+            background-color: rgb(138, 136, 134);
+            cursor: pointer; /*Cursor do mouse vira uma mãozinha*/
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <table summary="Dados do aluno"  width="250" cellspacing="0" cellpadding="2" align="center">
+    <caption>Tabela da minha família</caption> 
+
+    <thead><!--thead é o cabeçalho da tabela-->
+        <tr>
+            <th colspan="2">Tabela:</th> <!--(mesclar) O colspan faz com que a celula ocupe 2 colunas na horizontal, o rowspan serve para mesclas na vertical-->
+        </tr>
+        <tr><!--Abre uma linha na tabela-->
+            <th title="Nome completo">Nome</th>
+            <th>Idade</th>
+        </tr>
+    </thead>
+    <tbody><!--tbody é  o corpo da tabela onde fica as informações-->
+        <tr>
+            <td>Diego</td><!--Cria colunas-->
+            <td>38</td>
+        </tr>
+
+        <tr>
+            <td>Talita</td>
+            <td>30</td>
+        </tr>
+
+        <tr>
+            <td>Gabriela</td>
+            <td>3</td>
+        </tr>
+
+        <tr>
+            <td>Filho 2</td>
+            <td>0</td>
+        </tr>
+
+        <tr>
+            <td>Filho 3</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+
+<tfoot><!--É o rodapé da tabela-->
+    <td>Total</td>
+    <td>3</td>
+</tfoot>
+    </table>
+    
+</body>
+</html>

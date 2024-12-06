@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag table</title>
+    <style>
+        table tr:nth-child(even){ /* pseudo-codigo que coloca um background-color nas listas pares */
+            background-color: antiquewhite;
+        }
+
+        table tr:hover{
+            background-color: aqua;
+        }
+
+    </style>
+
+</head>
+<body>
+    <table summary="Dados do aluno" border="1" width="250" cellspacing="2" cellpadding="1" align="center"><!--Tag que inicia tabela e que engloba as outras tags-->
+    <!--O atributo border cria uma borda na tabela ,width configura a largura, align center centraliza a tabela, cellspacing da um espaçamento entre as celulas, cellpadding dá uma distância da borda para o conteúdo de dentro da célula, summary dá uma descrição da tabela, mas quem lê é o leitor de tela -->
+        <caption>Minha família</caption>
+        
+        <thead><!--Cabeçalho-->
+        
+            <tr><!--Abre uma linha na tabela-->
+
+            <th title="Nome completo">Nome</th><!--Cria um cabeçalho na tabela onde é auto formatado para ficar da melhor forma-->
+            <!--O atributo title é usando para quando clicarmos em cima aparecer tipo uma descrição daquilo que o atribuimos, ele é usado também por questões de acessibilidade onde facilita a leitura de tela-->
+            <th>Idade</th>
+        </thead>
+
+        <tbody><!--Corpo-->
+        </tr>
+        <td>Diêgo</td>
+        <td>38</td>
+        </tr>
+        
+        </tr>
+            <td>Talita</td>
+            <td>30</td>
+        </tr>
+
+        <tr>
+            <td>Gabriela</td>
+            <td>3</td>
+        </tr>
+        </tbody>
+
+        <tfoot><!--Rodapé-->
+            <tr>
+                <td>Total</td>
+                <td>3</td>
+            </tr>
+        </tfoot>
+
+    </tbody>
+    </table>
+    
+</body>
+</html>
