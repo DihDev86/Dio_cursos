@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tags estruturais</title>
+    <style>
+        nav ul{
+            display: flex;
+            list-style: none;
+            margin: 0; 
+        }
+        
+        nav ul li a{
+            padding: 10px;
+            text-decoration: none;
+            color: blue;
+
+        }
+
+        nav ul li a:hover{
+            color: white;
+            background-color: blue;
+            border-radius: 10px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#">Item 1</a></li>
+                <li><a href="#">Item 2</a></li>
+                <li><a href="#">Item 3</a></li>
+            </ul>
+        </nav><!--Aqui dentro é colocado links de navegação, que geralmente usamos ul-->
+    </header>
+    <main>
+        <!--É uma tag que não pode ser filha header, footer, article, Ou seja, ela  é uma tag principal e o restante são estruturais. Main é o contéudo principal da página e não podemos ter mais de 1 numa página, as demais tags podem ser colocadas dentro do main.Define o conteúdo principal da página.-->
+
+        <!--Dentro da main podemos colocar várias section que são como se fossem divs-->
+
+        <!--Já o aside são informações que não tem muito haver com o assunto principal, ele é separado do assunto principal. -->
+    </main>
+    <footer>
+        <address></address>
+    </footer>
+    
+</body>
+</html>
