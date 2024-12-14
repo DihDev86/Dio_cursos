@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tag Semânticas</title>
+    <style>
+        blockquote{
+            background-color: antiquewhite;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: solid 2px red;
+        }
+
+        time{
+            font-style:italic ;
+        }
+    </style>
+</head>
+<body>
+    <header>
+
+    </header>
+
+    <main>
+        <article><!--Serve para colocar artigos dentro, ou seja, conteúdos que são relacionados a página em si-->
+
+            <!--Quando colocamos um article dentro do outro, isso quer dizer que um está realicionado com o outro, podemos fazer da seguinte forma, um pode ser uma pergunta, o de dentro pode ser uma resposta.-->
+
+            <!--Podemos colocar um h1 como titulo , p como conteúdo.-->
+
+            <h1>Meu artigo</h1>
+            <p><time pubdate>12/12/2024 10:26</time></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam ipsam praesentium, eligendi excepturi deleniti laudantium doloribus quaerat natus corporis nihil aspernatur, perspiciatis asperiores reiciendis aperiam dicta! Quae iusto similique vel?</p>
+
+            <!--A tag time é referente a data da publicação-->
+
+            <blockquote cite="">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. At, ad.
+            </blockquote>
+
+            <!--O blockquote serve para colocar citações e o atributo cite serve para citarmos a fonte. Esse atributo não é visivel ao usuario, mas vista no console.-->
+
+            <!--Mesmo se colocarmos as citação dentro de p, o conteúdo continuará sendo citação-->
+
+            <q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores consectetur neque nulla saepe modi consequatur, provident tempore soluta? Quidem eum assumenda dolores? Accusamus voluptate laudantium similique consequuntur, sed eaque cupiditate.</q>
+
+            <!--A tag q também é uma citação, mas entre "", podemos usar também atributos como o cite.-->
+
+
+        </article>
+    </main>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>figure, figcaption e picture</title>
+</head>
+<body>
+    <figure> <!--É como se fosse um container, ela delimita o escopo de uma imagem, nele temos uma imagem com sua descrição, onde semânticamente fica tudo mais organizado.-->
+        <img src="./The_Blue_Marble_(remastered).jpg" width="250" alt="Imagem do planeta terra.">
+        <figcaption>Planeta Terra</figcaption>
+        <!--Coloca uma descrição na figure. Essa tag trabalha em conjunto com a figure.-->
+    </figure>
+
+    <picture><!--Com o picture da pra carregar uma imagem de multiplas fontes.-->
+        <source srcset="./The_Blue_Marble_(remastered).jpg" media="(min-width:600px)"> <!--Troca a fonte da imagem de acordo com a tela que estamos acessando.-->
+        <img src="marte.jpg"> 
+    </picture>
+
+</body>
+</html>

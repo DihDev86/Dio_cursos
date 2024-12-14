@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datalist</title>
+</head>
+<body>
+    <select name="browser" >
+        <option value="selecione">Selecione uma opção</option>
+        <option value="chrome">Google Chrome</option>
+        <option value="edge">Edge</option>
+        <option value="firefox">Firefox</option>
+        <option value="safari">Safari</option>
+        <option value="opera">Opera</option>
+    </select>
+
+    <!--Select cria uma combo box, as tags options são as options do box, o atributo value é o valor daquela opção-->
+    <!--O combo box por meio do select não nos dá outra opção a não ser as que temos para serem selecionadas, ele não é indicado para box que temos muitas opções.-->
+<br> 
+<hr>   
+
+    <input list="browser" type="search" name="search">
+    <datalist id="browser">
+        <option >Google Chrome</option>
+        <option >Edge</option>
+        <option >Firefox</option>
+        <option >Safari</option>
+        <option >Opera</option>
+    </datalist>
+
+    <!--O datalist é parecido com combo box, mas nele podemos digitar os valores que quisermos, nele armazenamos os options do combobox, o datalist precisa de um id como o name do combobox. -->
+    <!--Através da tag input com o atributo list, selecionamos o name do combobox que queremos, assim os valores do combobox seram sugeridos no datalist, mas sua escolha não será obrigatória, podemos digitar o valor que quisermos -->
+</body>
+</html>

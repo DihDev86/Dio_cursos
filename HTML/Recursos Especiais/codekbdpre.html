@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code,Kbd,pre</title>
+    <style>
+        kbd{
+            border: solid 1px black;
+        }
+        code{
+            background-color: lightgray;
+            color: red;
+        }
+
+        pre{
+            background-color: black;
+            color: white;
+            border-radius: 5px;
+        }
+
+        pre > p{
+            font-style: italic;
+            color: grey;
+        }
+    </style>
+</head>
+<body>
+    <!--Existem teclas especificas que servem para mostrar comandos no teclado, o kbd é uma delas-->
+    <!--O Kbd serve para colocar comandos de teclados,ou seja, instruções. No html5 ele é mais voltado para estrutura do que para formatação.-->
+
+    <p>Para copiar esse informação, pressione <kbd>CTRL</kbd> + <kbd>C</kbd>.</p>
+    
+
+    <!--Code serve para colocar comandos CSS-->
+    <p>Para trocar o fundo de um elemento utilize o comando <code>background-color</code>
+    .Se o comando tiver mais linhas podemos usar a tag pre</p>
+
+    <!--Com a tag pre podemos colocar todo o código dentro dela para ser exibido-->
+
+    <p>Códico usado para formatar o background-color dentro do code: <pre>
+        <P>//Aplicação</P>
+            code{
+            background-color: lightgray;
+            color: red;
+    }</pre></p>
+
+    <!--Fontes monospace, são fonte que ocupam a mesma largura. As tags que vimos usam essas fontes para exibir o que pedimos-->
+
+
+    
+</body>
+</html>

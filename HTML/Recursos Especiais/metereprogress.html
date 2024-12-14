@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meter e progress</title>
+    
+</head>
+<body>
+    <!--Meter e progress é muito confundido em seu uso, porque os dois praticamente fazer a mesma coisa, mas o que difere um do outro é a semântica-->
+
+    
+    <!--o meter funciona como um medidor-->    
+    <meter max="50" min="30" value="40"></meter>
+
+    <!--O progress serve para definir o progresso de uma ação, podemos mudar o comportameto do progres com os atributos max/min e value-->
+    <progress id="progress" max="100" min="0" value="10"></progress>
+
+    <script>
+        var progress = document.getElementById('progress');
+        const interval = setInterval(() => {
+            progress.value += 10;
+            if(progress.value >=100){
+                alert("Carregado com sucesso!")
+                clearInterval(interval)
+            }
+        },1000); 
+    </script>
+    
+</body>
+</html>
