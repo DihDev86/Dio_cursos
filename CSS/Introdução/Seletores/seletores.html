@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor por Tag ou Tipo</title>
+    <style>
+
+        /* Seletor de tags ou tipos*/
+        h1{
+            background-color: darkblue;
+            color: lightblue;
+            width: 200px;
+            border-radius: 5px;
+
+        }
+        
+        div{
+            background-color: lightblue;
+        }
+
+        ul{
+            border: solid black 1px;
+        }
+
+        li{
+            border: solid rgb(124, 13, 13) 1px;
+        }
+        
+        /* Seletor de ID # */
+        #texto-boas-vindas{
+            background-color: lightgreen;
+            color: white;
+            font-weight: bold;
+            width: 200px;
+            border-radius: 5px;
+        }
+
+        #explicacao-seletores{
+            font-weight: bolder;
+        }
+        
+        /* Seletor de classe */
+        .seletores-mais-comuns{
+            color: red;
+        }
+        .texto-maiusculo{
+            text-transform: uppercase;
+        }
+
+        /* Seletor universal: alterando a fonte de todo o documento*/
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <h1>Seletores CSS</h1>
+    <P id="texto-boas-vindas">Bem-vindo!</P>
+    <p id="explicacao-seletores">No CSS nós possuimos seletores:</p>
+    <div>
+        <ul>
+            <li class="seletores-mais-comuns  texto-maiusculo"><b>Seletor por tipo: </b>Busca elementos por uma tag HTML espicífica</li>
+            <li class="seletores-mais-comuns texto-maiusculo"><b>Seletor por ID #: </b>Seleciona um elemento com um ID específico (único na página).</li>
+            <li><b>Seletor universal (*): </b>Seleciona todos os elementos da página.</li>
+            <li><b>Seletores de atributos([atributo]) </b>Seleciona elementos que possuem um atributo específico.</li>
+            <li class="texto-maiusculo"><b>Seletores de classe (.): </b>Seleciona elementos que possuem uma classe específica.</li>
+        </ul>
+    </div> 
+    
+    <!--Seletores de tag, também conhecido como seletores de tipo-->
+
+    <!--O seletor de ID deve ser único em casa elemento-->
+
+    <!--Class servem para identificar um grupo de elementos, ele serve para dá estilo em vários elementos do HTML de uma vez só, a diferença dele para o ID é que podemos repetir o uso em outras tags, ou seja, elas podem ter a mesma classe -->
+
+    <!--Podemos colocar 2 classes diferentes em uma tag, isso facilita no estilo, para isso basta dá um espaço e colocar o outro nome do que queremos. Podemos usar a class nova em outras tags para usar o estilo dela.-->
+
+    <!--Seletor universal é identificar por um * e ele seleciona todas as tags da página, usamos ele da seguinte forma * {atributos e valores}. Essa tag é usada para padroniza-->
+
+    <h2>Lorem, ipsum.</h2>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta sapiente non id. Nam saepe eaque sit delectus autem odio est veniam ducimus quia cumque, ipsum explicabo numquam, velit aperiam? Commodi!</p>
+
+    <h2>Lorem, ipsum.</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Itaque impedit blanditiis incidunt, vitae voluptates debitis sit illum. Fuga magni odit possimus! Magnam, quis explicabo vel nobis animi quia rerum voluptates.</p>
+</body>
+</html>

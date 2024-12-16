@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletores de atributos</title>
+    <style>
+
+        /*Aplicando estilo no atributo title*/
+        /*Nomes de atributos sempre em colchetes, mas se quisermos colocar estilo em um único atributo, colocamos o atributo dentro do [] junto com o valor atribuido a ele*/
+
+        [title=Netflix]{
+            color: red;
+        }
+
+        [title=Spotify]{
+            color:green;
+        }
+
+        [title=Prime]{
+            color: blue;
+        }
+
+        [title~=Streaming]{
+            background-color: lightblue;
+        }
+
+        /*O ~ antes do = vai pesquisar a palavra exata ou separada por espaço, que é o valor do atributo para receber o estilo.
+        
+        Com o pipe | antes do = também conseguimos pesquisar a palavra.
+        */
+
+        
+        /* O ^ antes do = vai procurar o valor do atributo com prefixo dado dentro do []
+
+        O $ antes do = vai procurar o valor do sufixo dentro do []
+
+        O * antes do = vai procurar o valor do atributo em qualquer lugar dentro do []
+        */
+        
+        [href^="http://"]{
+            background-color: lightgreen;
+        }
+
+        [href$="login"]{
+            background-color: lightgrey;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <ul>
+            <li>
+                <a title="Streaming Netflix" href="http://www.netflix.com">Netflix</a>
+            </li>
+
+            <li>
+                <a title="Prime" href="http://www.primevideo.com">Prime</a>
+            </li>
+
+            <li>
+                <a title="Spotify" href="https://www.spotify.com/login">Spotify</a>
+            </li>
+
+            <li>
+                <a>
+                    Disney Plus
+                </a>
+            </li>
+        </ul>
+    </div>
+    
+</body>
+</html>
