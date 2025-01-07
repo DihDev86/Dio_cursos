@@ -1,0 +1,58 @@
+No CSS, existem dois tipos principais de combinadores irmãos que permitem selecionar elementos com base em sua relação de irmãos dentro do mesmo nível hierárquico no DOM:
+
+1. Combinador de Irmão Adjacente (+)
+Seleciona um elemento que é imediatamente subsequente (adjacente) a outro elemento especificado.
+
+Sintaxe:
+css
+
+elemento1 + elemento2 {
+    propriedade: valor;
+}
+
+Exemplo:
+html
+
+<h2>Título</h2>
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+css
+
+h2 + p {
+    color: red;
+}
+Explicação:
+
+O seletor h2 + p seleciona apenas o primeiro <p> que vem logo após um <h2>.
+Neste exemplo, apenas o primeiro <p> ficará vermelho.
+
+2. Combinador de Irmãos Gerais (~)
+Seleciona todos os elementos irmãos subsequentes ao elemento especificado, não apenas o primeiro.
+
+Sintaxe:
+css
+
+elemento1 ~ elemento2 {
+    propriedade: valor;
+}
+Exemplo:
+
+html
+Copiar código
+<h2>Título</h2>
+<p>Parágrafo 1</p>
+<p>Parágrafo 2</p>
+<p>Parágrafo 3</p>
+
+css
+
+h2 ~ p {
+    color: blue;
+}
+Explicação:
+
+O seletor h2 ~ p seleciona todos os <p> que vêm após um <h2>, independentemente de serem imediatamente subsequentes ou não.
+Neste exemplo, todos os três <p> ficarão azuis.
+Diferença entre + e ~:
++ → Apenas o primeiro irmão adjacente.
+~ → Todos os irmãos subsequentes

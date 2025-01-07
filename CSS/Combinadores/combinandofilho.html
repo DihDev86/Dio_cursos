@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    /*
+    Combinadores: qual o tido de relação entre 2 seletores.
+    1.combinador descendente (espaço)
+    2.combinador filho (>)
+    3.combinador irmão adjacente (+)
+    4.combinador irmão geral (~)
+
+    [Seletor] [Combinador] [Seletor]
+    */
+
+    div p{ /*Estilização em elemento descendente*/
+        background-color: lightgreen;
+    }
+
+    div > p{/*Estilização somente nos elementos filhos da div, não pegos os netos*/
+        color:blue;
+    }
+
+    </style>
+</head>
+<body>
+    <div> <!--Elemento pai-->
+        <p>Parágrafo 1 dentro da div</p><!--Elemento filho-->
+        <p>Parágrafo 2 dentro da div</p><!--Elemento filho-->
+        <span><!--Elemento filho-->
+            <p>Parágrafo 3 dentro da div, dentro do span</p><!--Elemento neto-->
+        </span>
+    </div>
+
+    <p>Parágrafo 4, fora da div</p>
+    <p>Parágrafo 5. fora da div</p>
+</body>
+</html>

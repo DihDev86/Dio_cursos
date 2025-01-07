@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinador Descendente</title>
+    <style>
+    
+    .fundo-verde li{
+        background-color: lightgreen;
+    }
+
+    .fundo-azul li{
+        background-color: lightblue;
+    }
+    
+    .fundo-verde #subitem-02 li{
+        color: lightslategray;
+    }
+
+    /*
+    Combinadores: qual o tido de relação entre 2 seletores.
+    1.combinador descendente (espaço)
+    2.combinador filho (>)
+    3.combinador irmão adjacente (+)
+    4.combinador irmão geral (~)
+
+    [Seletor] [Combinador] [Seletor]
+    */
+
+    /* 
+    li li{ Filhos descendente = Foram estilizadas li dentro de li 
+        color: green;
+    }
+    */
+
+    /*
+    #lista-01 li{Nesse caso estamos aplicando uma cor de fundo a li que está dentro da #lista-01
+        background-color: aqua;
+    }
+    */
+
+    </style>
+</head>
+<body>
+    <h1>Combinador Descendente</h1>
+    <ul>
+        <li class="fundo-verde" id="lista-01">
+            <div>Item 1</div>
+            <ul id="subitem-01">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-verde" id="lista-02">
+            <div>Item 2</div>
+            <ul id="subitem-02">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+        <li class="fundo-azul" id="lista-03">
+            <div>Item 3</div>
+            <ul id="subitem-03">
+                <li>Subitem A</li>
+                <li>Subitem B</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>

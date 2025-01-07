@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale= 1.0">
+    <title>Trilha de CSS</title>
+    <style>
+        /*No agrupamento de seletores, podemos agrupar todos os tipos de seletores usando a (,), podemos agrupara seletores do tipo tag, id ou classes
+        
+        Podemos selecionar seletores com tag onde queremos estilizar somente ele, como por exemplo
+
+        p.texto = só serão estilizadas as tags p com a class texto
+        
+        
+        */
+
+        h1,[id^="botao"]{
+            font-weight: bold;
+            color: lightblue;
+            background-color: red;
+            width: 200px;
+        }
+
+        .conteudo, p{
+            background-color: antiquewhite;
+            font-weight: bold;
+        }
+
+        #link-referencia, #link-suporte{
+            background-color: black;
+            color: white;
+            font-size: 20px;
+            border: solid 2px lightblue;
+        }
+
+        p.texto,p.teste{
+            background-color: aqua;
+            color: white;
+            font-weight: bold;
+        }
+        
+    </style>
+    </head>
+<body>
+    <h1>Agrupamento de Seletores</h1>
+    <p>Podemos aplicar as mesmas regras CSS para vários seletores diferentes, para isso podemos separar os seletores usando virgula(,)</p>
+    <div class="conteudo">Assim, não precisamos ficar copiando e colando os mesmos códigos para todos, nós podemos fazer um só bloco de CSS e reutilizar as regra.</div>
+
+    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae recusandae a soluta odit perferendis minus officia distinctio aliquid sapiente, omnis modi assumenda animi voluptatum ducimus voluptas praesentium velit quaerat quia!
+    </p>
+
+    <p class="teste">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam consequuntur vel enim minima qui nisi et reprehenderit facere dolores voluptatum tempore est deserunt excepturi temporibus doloremque, aliquid repellat eius sit.</p>
+    
+    <br><br>
+    <a id="link-referencia" href="#">Clique para ver a documentação</a>
+    <br><br>
+    <a id="link-suporte" href="#">Clique para entrar em contato</a>
+    <br><br>
+    <a id="botao-voltar" href="#">Voltar</a>
+    <br><br>
+    <button id="botao-fechar">Fechar página</button>
+</body>
+</html>
