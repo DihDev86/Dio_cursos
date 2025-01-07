@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #div01{
+            background-color: lightblue;
+            width: 200px;/*Altera a largura em px*/
+            height: 200px;/*Altera a altura em px*/
+        }
+        #div02{
+            width: 200px;
+            background-color: lightseagreen;
+            height: inherit; /*Faz com que a div02 tenha a mesma altura do div01 que é o pai*/
+        }
+    </style>
+</head>
+<body>
+    <div id="div01">
+        Eu sou a Div 1
+        <div id="div02">
+            Eu sou a Div 2
+        </div>
+    
+    </div>
+    
+</body>
+</html>
