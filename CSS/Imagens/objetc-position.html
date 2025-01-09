@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-position</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 3px solid lightskyblue;
+        }
+
+        img{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            object-position:  center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>objetc-position</code></h1>
+        <p>A propriedade object-position no CSS é usada para definir o alinhamento do conteúdo de um elemento (como uma imagem ou vídeo) dentro do contêiner, quando ele não preenche o contêiner totalmente. Ela funciona em conjunto com object-fit.</p>
+    <h2>Sintaxe</h2>
+        <hr>
+        <code>elemento {<br>
+            object-position: valor-x valor-y;<br>
+        }
+        </code>
+        <br><br>
+        <hr>
+
+        <p>Por padrão, o valor é 50% 50%, que posiciona o conteúdo no centro.</p>
+        <ul>
+            <li>valor-x: Alinha o conteúdo horizontalmente (esquerda, centro, direita).</li>
+            <li>valor-y: Alinha o conteúdo verticalmente (topo, centro, base).</li>
+        </ul>
+    <div>
+        <img src="./img/images.png" alt="">
+    </div>
+
+    <h2>Valores Aceitos</h2>
+
+    <h3>1.Palavra-chave:</h3>
+        <ul>    
+            <li>top, bottom → Posicionam verticalmente no topo ou na base.</li>
+            <li>left, right → Posicionam horizontalmente à esquerda ou à direita.</li>
+            <li>center → Centraliza o conteúdo horizontal ou verticalmente.</li>
+        </ul>
+    <hr>
+        <h4>Exemplo:</h4>
+        <code>
+            img {<br>
+                object-position: left top; /* Alinhado ao canto superior esquerdo */ <br>
+            } 
+        </code>
+    <hr>
+
+    <h3>2.Porcentagens:</h3>
+        <ul>
+            <li>Especifica a posição como uma porcentagem da largura e altura do contêiner.</li>
+            <li>0% → Início do eixo.</li>
+            <li>100% → Final do eixo.</li>
+        </ul>
+    <h4>Exemplo:</h4>
+        <code>
+            img {<br>
+                object-position: 25% 75%; /* 25% do eixo X, 75% do eixo Y */ <br>
+            }
+            
+        </code>
+    <hr>
+
+    <h3>3.Valores em pixels:</h3>
+        <ul>
+            <li>Pode usar valores fixos, como px, para posicionar o conteúdo de forma absoluta dentro do contêiner.</li>
+        </ul>
+        <h4>Exemplo:</h4>
+        <code>
+            img {<br>
+                object-position: 10px 20px; /* 10px da esquerda, 20px do topo */ <br>
+            }   
+        </code>
+    <hr>
+
+    <h2>Quando usar <code>object-position?</code></h2>
+        <ul>
+            <li>Para controlar qual parte do conteúdo será visível em contêineres com cortes (como imagens cover ou contain).
+            </li>
+            <li>
+                Para alinhar elementos em layouts esteticamente agradáveis.
+            </li>
+        </ul>
+</body>
+</html>

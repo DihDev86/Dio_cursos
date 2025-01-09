@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objetc fit</title>
+    <style>
+        div{
+            width: 200px;
+            height: 300px;
+            border: 3px solid tomato;
+        }
+        
+        img{
+            width: 100%;
+            height: 100%;
+        }
+
+        #contain{
+            object-fit: contain;
+        }
+
+        #cover{
+            object-fit: cover;
+        }
+
+        #none{
+            object-fit: none;
+        }
+
+        #scale-down{
+            object-fit: scale-down;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>object-fit</code></h1>
+    <p>A propriedade object-fit no CSS é usada para especificar como o conteúdo de um elemento, como uma imagem ou vídeo, deve se ajustar à caixa do seu contêiner.</p>
+    
+    <h2>Sintaxe</h2>
+    <p>CSS</p>
+    <hr>
+    <code>
+        elemento {<br>
+        object-fit: valor;<br>
+    }
+</code>
+    <hr>
+    <br><br>
+    <code>Objetc-fit: ;</code>
+
+    
+    <h2>Valores possíveis do <code>object-fit</code></h2>
+    <ol>
+        <li> 
+            <h3>fill (padrão):</h3>
+                <p>Faz com que o conteúdo preencha completamente o contêiner, mesmo que precise distorcer as proporções.</p>
+            <hr>
+            <code>
+                img {<br>
+                    object-fit: fill;<br>
+                }
+            </code>
+            <hr>
+            <div>
+                <img src="./img/images.png" alt="Logo-Dio" id="fill">
+        
+            </div>
+        </li>
+
+        <li>
+            <h3>contain:</h3>
+                <p>Redimensiona o conteúdo para caber completamente no contêiner, mantendo suas proporções originais.</p>
+                <p>Pode deixar espaços vazios ao redor do conteúdo.</p>
+            <hr>
+            <code>
+                img {<br>
+                    object-fit: contain;<br>
+                }
+            </code>
+            <hr>
+            <div>
+                <img src="./img/images.png" alt="Logo-Dio" id="contain">
+        
+            </div>
+        </li>
+
+        <li>
+            <h3>cover:</h3>
+                <p>Redimensiona o conteúdo para preencher completamente o contêiner, mantendo as proporções originais.</p>
+                <p>Parte do conteúdo pode ser cortada se não couber.</p>
+            <hr>
+            <code>
+                img {<br>
+                object-fit: cover;<br>
+                }
+            </code>
+            <hr>
+            <div>
+                <img src="./img/images.png" alt="Logo-Dio" id="cover">
+        
+            </div>
+        </li>
+
+        <li>
+            <h3>none:</h3>
+                <p>Mantém o tamanho original do conteúdo sem redimensioná-lo.</p>
+                <p>Parte do conteúdo pode ficar cortada ou transbordar do contêiner.</p>
+            <hr>
+            <code>img {<br>
+                object-fit: none;<br>
+            }</code>
+            <hr>
+            <div>
+                <img src="./img/images.png" alt="Logo-Dio" id="none">
+        
+            </div>
+        </li>
+
+        <li>
+            <h3>scale-down:</h3>
+                <p>Funciona como uma combinação de none e contain.</p>
+                <p>O conteúdo é exibido no menor tamanho possível entre esses dois valores.</p>
+            <hr>
+            <code>img {<br>
+                object-fit: scale-down;<br>
+            }</code>
+            <hr>
+            <div>
+                <img src="./img/images.png" alt="Logo-Dio" id="scale-down">
+        
+            </div>
+        </li>
+
+    </ol>
+
+    <h2>Quando usar <code>object-fit</code></h2>
+        <ul>
+            <li>Para lidar com imagens responsivas.</li>
+            <li>Ajustar vídeos em diferentes tamanhos de contêineres.</li>
+            <li>Evitar distorções em imagens ao usar layouts flexíveis.</li>
+        </ul>
+</body>
+</html>

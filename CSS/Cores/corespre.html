@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cores pré-definidas</title>
+    <style>
+
+        #pre-definidas{
+            color: indianred;
+        }
+
+        #current-color{
+            background-color: transparent;/*O elemento fica com a cor de funda da página, ou seja, acima foi definido uma cor de fundo aqua em todas as li, com o background com o valor transparent, ele fica transparent, vindo a aparecer a cor de fundo da página*/
+
+            color: deeppink;
+            border: 2px solid currentColor; 
+            /*O valor currentcolor pega o valor do color dinamicamente e usa na cor do borde, ou seja ele serve para pegar valores e reutiliza-los*/
+        }
+
+        #rgb{ /*Red, blue e green(podemos usar valores em %) mas não é muito comum*/
+            color: rgb(189, 15, 155);
+        }
+
+        #rgba{/*O rgba é uma extenção do rgb, mas com o a de alfa que se trata da transparência, que vai de 0.0 á 1.0 onde quanto menor o valor, maior será a transparência*/
+            color: rgba(21, 8, 1, 0.5);
+        }
+        
+        #hex{
+            background-color: #88848400;/*para colocar transparência é so acrescentar mais dois valores que no caso é o 00*/
+            color: pink;
+        }
+
+        /*HSL
+        
+        hls(hue, saturation, lightness)
+            - HUE(matiz): é o grau na roda de cores (de 0 a 360)
+                - 0 ou 360 é vermelho
+                -120 é verde
+                -240 é azul
+            -Saturation (saturação): valor percentual
+                -0% com tom de cinza
+                -100% cor total
+            -Lightness(luminosidade): luninosidade da cor
+                -0% é preto
+                -100% é branco        
+            */
+
+            #hsl{
+                color: hsl(0, 100%, 50%);
+            }
+
+            #hsla{/*É uma extensão do hsl com o a de alfa que é transparencia*/
+                background-color: hsla(50, 80%, 60%, 0.5) ;
+            }
+
+    </style>
+</head>
+<body>
+    <h1>Cores</h1>
+    <p>Existem várias formas de definirmos cores com o CSS, elas são: </p>
+        <ul>
+            <li id="pre-definidas">Cores pré-definidas </li>
+            <li id="current-color">Palavra-chave "current-color"</li>
+            <li id="hex">Hexadecimal</li>
+            <li id="hex-transparecia">Hexadecimal com transparência</li>
+            <li id="rgb">RGB</li>
+            <li id="rgba">RGBA</li>
+            <li id="hsl">HSL</li>
+            <li id="hsla">HSLA</li>
+        </ul> 
+</body>
+</html>
