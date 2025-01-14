@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade background-clip</title>
+    <style>
+        body{
+            margin: 0 auto;
+            width: 50%; /* Ajuste a largura conforme necessário */
+        }
+
+        h1{
+            background-color: lightgreen;
+            border-radius: 5px;
+            color: lightslategray;
+        }
+
+        h2{
+            background-color: lightblue;
+            border-radius: 5px;
+            color: lightslategray;
+        }
+
+        code{
+            background-color: yellow;
+        }
+
+        p{
+            line-height: 1.5;
+            font-size: arial sans-serif; 
+            color: #666;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade background-clip</h1>
+    <p>
+        A propriedade <code>background-clip</code> CSS especifica se uma imagem de fundo é cortada para caber nas bordas da caixa de conteúdo, das bordas da caixa de preenchimento ou das bordas da caixa de borda.
+    </p>
+
+    <p>
+        A propriedade <code>background-clip</code> tem três valores possíveis:<code>border-box</code>, <code>padding-box</code> e <code>content-box</code>.
+    </p>
+
+    <p>
+        A propriedade background-clip tem algumas semelhanças com a background-origin. 
+        A diferença é que a background-origin define a origem da imagem de fundo, enquanto a background-clip define a área de exibição da imagem de fundo.
+    </p>
+
+
+    <h2>background-clip: border-box;</h2>
+    <p>
+        Se você definir a propriedade background-clip como <code>border-box</code>, a imagem de fundo será cortada para caber nas bordas da caixa de bordas.</p>
+
+    <h2>background-clip: padding-box;</h2>
+    <p>
+        Se você definir a propriedade background-clip como <code>padding-box</code>, a imagem de fundo será cortada para caber nas bordas da caixa de preenchimento.
+    </p>
+
+    <h2>background-clip: content-box;</h2>
+    <p>
+        Se você definir a propriedade background-clip como <code>content-box</code>, a imagem de fundo será cortada para caber nas bordas da caixa de conteúdo.
+    </p>
+    
+    
+</body>
+</html>

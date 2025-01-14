@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-origin</title>
+    <style>
+
+        body{
+            margin: 0 auto;
+            width: 50%; /* Ajuste a largura conforme necessário */
+        }
+
+        .exemplo{
+            width: 200px;
+            height: 200px;
+            margin: 10px;
+            border: 8px dashed rgb(87, 5, 5);
+            background-image: url("./img/montanha.jpg");
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            padding: 30px;
+            
+        }
+        
+        #padding-box{
+            background-origin: padding-box;
+        }
+
+        #border-box{
+            background-origin: border-box;
+        }
+
+        #content-box{
+            background-origin: content-box;
+        }
+
+        h1{
+            background-color: rgb(87, 5, 5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+
+        h2{
+            background-color: rgb(87, 5, 5);
+            color: white;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <h1>Propriedade <code>background-origin</code></h1>
+    <p>
+        A propriedade <code>background-origin</code> CSS especifica a origem da imagem de fundo.
+    </p>
+
+    <h2>A Relação entre Padding e background-origin no CSS</h2>
+    <p>Padding e background-origin são propriedades CSS que, juntas, controlam como o plano de fundo de um elemento se comporta em relação ao seu conteúdo e bordas. Entender essa relação é fundamental para criar layouts precisos e visuais esteticamente agradáveis. Sua estilização é de acordo com o padding.</p>
+    
+
+    <h2>
+        Os valores da propriedade <code>background-origin</code> podem ser <code>padding-box</code>, <code>border-box</code> ou <code>content-box</code>.
+    </h2>
+
+<ul>
+    <li>
+        <p>
+            O valor(padrão) <code>padding-box</code> faz com que a imagem de fundo comece a partir da borda interna do elemento.
+            <div id="padding-box" class="exemplo"></div>
+        </p>
+    </li>
+
+    <li>
+        <p>
+            O valor <code>border-box</code> faz com que a imagem de fundo comece a partir da borda do elemento.
+            <div id="border-box" class="exemplo"></div>
+        </p>
+    </li>
+
+    <li>
+        <p> 
+            O valor <code>content-box</code> faz com que a imagem de fundo comece a partir do conteúdo do elemento.
+            <div id="content-box" class="exemplo"></div>
+        </p>
+    </li>
+</ul>
+
+
+</body>
+</html>
