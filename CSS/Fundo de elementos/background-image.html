@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        body {
+            margin: 0 auto;
+            width: 50%; /* Ajuste a largura conforme necessário */
+        }
+
+        /* Estilo para o corpo da página */
+
+
+        /* Estilo para os títulos */
+        h3 {
+            color: #333;
+            font-size: 24px;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para os parágrafos */
+        p {
+            color: #666;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para a lista */
+        ol {
+            list-style-type: decimal;
+            padding-left: 20px;
+        }
+
+        li {
+            margin-bottom: 20px;
+        }
+
+        /* Estilo para os blocos de código */
+        code {
+            display: block;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            padding: 10px;
+            margin-bottom: 20px;
+            font-family: 'Courier New', Courier, monospace;
+            color: #c7254e;
+            background-color: #f9f2f4;
+            border-radius: 4px;
+        }
+
+        div{
+            width: 300px;
+            height: 300px;
+            background-color: tomato;
+        
+        }
+
+        #padrao{
+            background-image: url(../Imagens/img/images.png);
+        }
+
+        #idlinear-gradiente{
+            background-image: linear-gradient(lightpink, lightgreen);
+        }
+
+        #radial-gradiente{
+            background-image: radial-gradient(lightgreen, lightskyblue)}
+
+        #repeating-linear-gradiente{
+            background-image: repeating-linear-gradient(to top,palevioletred 0 20px , lightpink 20px 40px )
+        }
+    </style>
+</head>
+<body>
+    <h1><code>background-image</code></h1>
+    <p id="paragrafo">A propriedade background-image no CSS é usada para definir uma ou mais imagens de fundo em um elemento. Essas imagens são renderizadas no plano de fundo do elemento, abaixo do conteúdo e das bordas.</p>
+    
+    <h2>A sintaxe básica é:</h2>
+    <code>
+        background-image: url('caminho/para/imagem.jpg');
+    </code>
+
+    <p>Você pode usar diferentes valores para personalizar o plano de fundo.</p>
+
+    <div id="padrao"></div>
+
+    <h2>Valores possiveis de <code>background-image</code></h2>
+        <ol>
+            <li>
+                <h3>Url( )</h3>
+                <p>Define uma imagem como plano de fundo usando o caminho do arquivo. Pode ser um caminho relativo ou absoluto:</p>
+
+
+                <p>Valor absoluto é o valor que vem de uma url de um arquivo da máquina.</p>
+                <code>
+                background-image: url('./imagens/fundo.jpg');
+                </code>
+
+                <p>Valor relativo é o valor que vem de uma url externa, ou seja, de algum link da internet.</p>
+                
+                <code>
+                background-image: url('https://exemplo.com/imagem.jpg');
+                </code>
+            </li>
+
+            <li>
+                <h3>none</h3>
+                <p>Remove a imagem de fundo do elemento. O plano de fundo será transparente.</p>
+                <code>
+                    background-image: none;
+                </code>
+            </li>
+
+            <li>
+                <h3>linear-gradient( )</h3>
+                <p>Cria uma imagem de fundo com um gradiente linear. Você pode especificar duas ou mais cores e suas posições.</p>
+                <code>
+                    background-image: linear-gradient(lightpink, lightgreen);
+                </code>
+
+                <div id="idlinear-gradiente"></div>
+            </li>
+
+            <li>
+                <h3>radial-gradient(  )</h3>
+                <p>
+                    Cria uma imagem de fundo com um gradiente radial. Você pode especificar duas ou mais cores e suas posições.
+                </p>
+
+                <code>
+                    background-image: radial-gradient(lightgreen, lightskyblue);
+                </code>
+
+                <div id="radial-gradiente"></div>
+            </li>
+
+            <li>
+                <h3>
+                    repeating-linear-gradient</h3>
+                <p>
+                    Cria uma imagem de fundo com um gradiente linear que se repete. Você pode especificar duas ou mais cores e suas posições.</p>
+                <code>
+                    background-image: repeating-linear-gradient(to top,palevioletred 0 20px , lightpink 20px 40px );
+                </code>
+
+                <div id="repeating-linear-gradiente"></div>
+            </li>
+    
+        </ol>
+</body>
+</html>

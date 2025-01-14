@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimensionando as imagens de fundo dos elementos</title>
+    
+    <style>
+        
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            background-image: url(./img/montanha.jpg);/*Aqui o valor do background-size é auto, que é o valor padrão*/
+        }
+
+        #auto{
+            background-image: url(./img/montanha.jpg);/*Aqui o valor do background-size é auto, que é o valor padrão*/
+        }
+
+        #cover{
+            background-size: cover;/*Redimensiona a imagem para cobrir completamente o contêiner, mantendo as proporções.
+            
+            Parte da imagem pode ser cortada se as proporções do contêiner e da imagem forem diferentes.
+            */
+        }
+
+        #contain{
+            background-size: contain;/*Redimensiona a imagem para caber completamente no contêiner, mantendo as proporções.
+            Pode deixar espaços vazios no contêiner.*/
+
+        }
+
+        #lenght{
+            background-size: 300px 300px;
+            /*(valores fixos, como px, em, etc.):
+
+            Especifica a largura e/ou altura da imagem de fundo.
+            Pode definir um único valor (aplica-se à largura, e a altura será ajustada proporcionalmente) ou dois valores (largura e altura).*/
+        }
+
+            /*initial:
+            Define o valor padrão da propriedade (auto).
+
+            inherit:
+            Herda o valor do elemento pai.
+            */
+
+        #porcentagem{
+            background-size: 50% 50%;
+            /*Define o tamanho da imagem de fundo como uma porcentagem do tamanho do contêiner.
+            O valor é calculado com base nas dimensões do contêiner.*/
+        }
+
+    </style>
+</head>
+<body>
+
+    <h1>Redimensionando as imagens de fundo dos elementos</h1>
+    <p>background-image: auto;</p>
+    <div id="auto" class="exemplo"></div>
+
+    <p>background-size: cover;</p>
+    <div id="cover" class="exemplo"></div>
+
+    <p>background-size: contain;</p>
+    <div id="contain" class="exemplo"></div>
+
+    <p>background-size: lenght;</p>
+    <div id="lenght" class="exemplo"></div>
+
+    <p>background-size: porcentagem;</p>
+    <div id="porcentagem" class="exemplo"></div>
+
+</body>
+</html>

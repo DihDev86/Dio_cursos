@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade background Attachment</title>
+    <style>
+        body {
+            margin: 0 auto;
+            width: 50%; /* Ajuste a largura conforme necessário */
+            height: 200vh ;
+        }
+
+        .exemplo {
+            background-image: url('./img/montanha.jpg');
+            width: 300px;
+            height: 300px;
+            border: 3px solid red;
+            background-size: cover;
+            overflow: auto;
+        } 
+
+        #fixed {
+            background-attachment: fixed;
+        }
+
+        #scroll {
+            background-attachment: scroll;
+        }
+
+        #local {
+            background-attachment: local;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Propriedade background Attachment</h1>
+    <h2>Para quê serve o <code>background-attachment</code>?</h2>
+    <p>
+        O <code>background-attachment</code> é uma propriedade CSS que define se a imagem de fundo rola com o conteúdo da página ou se ela permanece fixa.
+    </p>
+    <h2>Quais são os valores e como são usados?</h2>
+    <p>
+        Os valores do <code>background-attachment</code> podem ser <code>scroll</code> ou <code>fixed</code>. 
+        O valor <code>scroll</code> faz com que a imagem de fundo role com o conteúdo da página, enquanto o valor <code>fixed</code> faz com que a imagem de fundo permaneça fixa.
+    </p>
+    <p>
+        <strong>Exemplo:</strong> 
+    </p>
+    <code>
+        .exemplo {<br>
+            background-image: url('./img/montanha.jpg');<br>
+            background-attachment: fixed;<br>
+        }
+    </code>
+
+    <h2>background-attachment: fixed</h2>
+    <p>
+        Neste exemplo, a imagem de fundo permanece fixa enquanto o conteúdo da página rola.
+    </p>
+
+    <code>background-attachment: fixed;</code>
+    <div id="fixed" class="exemplo"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit officia, doloremque commodi reiciendis odit consectetur exercitationem, hic voluptatum impedit unde, vel placeat voluptatem in sed quae ullam dolor eum. <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, saepe harum possimus assumenda molestias veniam laudantium eaque sapiente reiciendis quasi rem corporis amet nostrum aliquid autem error neque tenetur totam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus perspiciatis natus accusantium voluptas placeat aut, illum mollitia saepe commodi non explicabo autem ipsam quas nobis et suscipit quae inventore aliquid impedit quaerat deleniti corrupti dolores. Quidem, excepturi iure. Sunt quisquam qui soluta ipsa in facere at, placeat doloremque necessitatibus.</p></div>
+
+    <br>
+
+    <p>
+        A propriedade overflow com o valor auto adiciona um scroll automaticamente de acordo com o tamanho da div e do conteúdo.</p>     
+    <p> 
+        Temos uma imagem de fundo fixa e um conteúdo que rola. 
+    </p>
+
+    <h2>background-attachment:scroll;</h2>
+    <code>background-attachment: scroll;</code>
+    <div id="scroll" class="exemplo"><p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Accusamus velit officia, doloremque commodi reiciendis odit consectetur exercitationem, hic voluptatum impedit unde, vel placeat voluptatem in sed quae ullam dolor eum. <br>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quia, saepe harum possimus assumenda molestias veniam laudantium eaque sapiente reiciendis quasi rem corporis amet nostrum aliquid autem error neque tenetur totam.</p><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab repellendus perspiciatis natus accusantium voluptas placeat aut, illum mollitia saepe commodi non explicabo autem ipsam quas nobis et suscipit quae inventore aliquid impedit quaerat deleniti corrupti dolores. Quidem, excepturi iure. Sunt quisquam qui soluta ipsa in facere at, placeat doloremque necessitatibus.</p></div>
+
+    <br><br>    
+
+    <p>No background-attachment: scroll; A imagem de fundo rola com o conteúdo da página.
+    </p>
+    
+    <h2>background-attachment: local;</h2>
+    <code>background-attachment: local;</code>
+    <div id="local" class="exemplo"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore pariatur repudiandae, placeat ducimus consectetur vel, similique ut velit perspiciatis quidem, obcaecati iste rem nesciunt nam maiores tempore praesentium nisi maxime. Cupiditate, ab cumque? Assumenda ratione voluptates fugit accusamus veniam magni enim cupiditate veritatis commodi nostrum? Distinctio in accusantium officiis, fuga possimus quidem recusandae animi ab repellat suscipit ex necessitatibus sunt quibusdam nisi rem blanditiis aut veritatis perspiciatis incidunt. Ipsum delectus quia neque eius consectetur veritatis optio a asperiores quibusdam esse, ad quo sequi temporibus odit consequuntur accusamus, cum aliquam enim. Numquam enim vitae rerum sunt soluta blanditiis ea id consequatur.</p></div> 
+
+    <br><br> 
+
+    <p>No background-attachment: local; imagem de fundo rola com o conteúdo da div.
+    </p>
+
+    <br>
+</body>
+</html>

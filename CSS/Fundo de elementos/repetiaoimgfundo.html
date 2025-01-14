@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Repetição das imagens de fundo</title>
+    <style>
+
+        body {
+            margin: 0 auto;
+            width: 50%; /* Ajuste a largura conforme necessário */
+        }
+
+        h1 {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        h2 {
+            background-color: #f44336; /* Vermelho */
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+        }
+
+        p {
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5; /*Espaçamento entra as letras, melhora a experiência da leitura*/
+            color: #333; /* Cinza escuro */
+            text-align: justify; /* Alinha o texto justificado */
+        }
+
+        .espaco{
+            text-indent: 2em;
+        }
+        
+        .exemplo {
+            background-image: url('./img/montanha.jpg');
+            width: 300px;
+            height: 300px;
+            border: 3px solid red;
+            background-size: 300px;
+        }
+
+        #repeat {
+            background-repeat: repeat;
+        }
+
+        #repeat-x {
+            background-repeat: repeat-x;
+        }
+
+        #repeat-y {
+            background-repeat: repeat-y;
+        }
+
+        #no-repeat {
+            background-repeat: no-repeat;
+        }
+
+        #space {
+            background-repeat: space;
+        }
+
+        #round {
+            background-repeat: round;
+        }
+    </style>
+</head>
+<body>
+    <div class="conteudo"></div>
+    <h1>Repetição das imagens de fundo</h1>
+
+    <p class="espaco">A propriedade background-repeat controla como a imagem de fundo se repete no contêiner (horizontalmente, verticalmente ou nenhum dos dois).  No entanto, se a imagem for muito grande ou muito pequena em relação ao contêiner, pode parecer que background-repeat não está funcionando. <br></p>
+
+    <p class="espaco">propriedade background-size! Ela ajusta o tamanho da imagem de fundo para que fique proporcional ou no tamanho correto dentro do contêiner.  Isso garante que o comportamento do background-repeat seja visível e previsível.</p>
+
+    <h2>background-repeat: repeat (padrão)</h2>
+    <p>A imagem de fundo é repetida horizontalmente e verticalmente para cobrir todo o contêiner.</p>
+    <div id="repeat" class="exemplo"></div>
+
+    <h2>background-repeat: repeat-x</h2>
+    <p>A imagem de fundo é repetida apenas horizontalmente.</p>
+    <div id="repeat-x" class="exemplo"></div>
+
+    <h2>background-repeat: repeat-y</h2>
+    <p>A imagem de fundo é repetida apenas verticalmente.</p>
+    <div id="repeat-y" class="exemplo"></div>
+
+    <h2>background-repeat: no-repeat</h2>
+    <p>A imagem de fundo não é repetida. Apenas uma instância da imagem será exibida.</p>
+    <div id="no-repeat" class="exemplo"></div>
+
+    <h2>background-repeat: space</h2>
+    <ul>
+        <li>A imagem de fundo é repetida sem cortar nenhuma parte.</li>
+        <li>Espaços uniformes são adicionados entre as repetições para preencher o contêiner.</li>
+        <li>A imagem é ajustada para que haja um espaço igual entre as cópias.</li>
+    </ul>
+    <div id="space" class="exemplo"></div>
+
+    <h2>background-repeat: round</h2>
+    <ul>
+        <li>A imagem de fundo é repetida e redimensionada para se ajustar ao contêiner.</li>
+        <li>Nenhum espaço vazio será deixado, e a imagem é redimensionada para caber perfeitamente nas dimensões disponíveis.</li>
+    </ul>
+    <div id="round" class="exemplo"></div>
+</div>
+<br><br>
+</body>
+</html>

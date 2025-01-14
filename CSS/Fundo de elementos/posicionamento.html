@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento das imagens de fundo</title>
+    <style>
+
+        body {
+            margin: 0 auto;
+            width: 50%; /* Ajuste a largura conforme necessário */
+        }
+        #exemplo{
+            width: 300px;
+            height: 300px;
+            background-image: url(./img/montanha.jpg);
+            background-size: 120px;
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            border: 3px solid red;
+            background-position: bottom center;
+        }
+
+        p {
+            color: #666;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+        }
+
+        li {
+            color: #444;
+            font-family: 'Arial', sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 10px;
+        }
+
+
+    </style>
+</head>
+<body>
+    <h1>Posicionamento das imagens de fundo</h1>
+    <div id="exemplo"></div>
+
+    <h2>Para quê serve o <code>background-position</code>?</h2>
+    <p>
+        O <code>background-position</code> é uma propriedade CSS que define a posição inicial de uma imagem de fundo. 
+        A imagem de fundo é colocada no contêiner de acordo com os valores fornecidos para o <code>background-position</code>.
+    </p>
+
+    <h2>Quais são os valores e como são usados?</h2>
+    <p>
+        Os valores do <code>background-position</code> podem ser expressos em pixels, porcentagem ou palavras-chave. 
+        Os valores são usados para definir a posição da imagem de fundo em relação ao contêiner.
+    </p>
+    
+    <p> 
+        <strong>Palavras-chave:</strong> 
+        <ul>
+            <li><code>top</code>: a imagem de fundo é posicionada no topo do contêiner.</li>
+            <li><code>bottom</code>: a imagem de fundo é posicionada na parte inferior do contêiner.</li>
+            <li><code>left</code>: a imagem de fundo é posicionada à esquerda do contêiner.</li>
+            <li><code>right</code>: a imagem de fundo é posicionada à direita do contêiner.</li>
+            <li><code>center</code>: a imagem de fundo é posicionada no centro do contêiner.</li>
+        </ul>
+    </p>
+
+    <h2>Usando dois valores:</h2>
+    <p>
+        Se você fornecer dois valores para o <code>background-position</code>, o primeiro valor será a posição horizontal e o segundo valor será a posição vertical da imagem de fundo.
+    </p>
+
+    <p>
+        <strong>Exemplo:</strong> <code>background-position: 50% 50%;</code> - a imagem de fundo é centralizada no contêiner.
+    </p>
+
+    <h2>Usando valores em pixels e porcentagem</h2>
+    <p> 
+        Você também pode usar valores em pixels e porcentagem para definir a posição da imagem de fundo.
+    </p>
+
+    <p> 
+        <strong>Exemplo:</strong> <code>background-position: 100px 50%;</code> - a imagem de fundo é posicionada 100 pixels à direita e centralizada verticalmente no contêiner.
+    </p>
+
+    <p>
+        <strong>Nota:</strong> Se você fornecer apenas um valor, ele será considerado como a posição horizontal da imagem de fundo. A posição vertical será definida como <code>center</code> por padrão.
+    </p>
+</body>
+</html>
