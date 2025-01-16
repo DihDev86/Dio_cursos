@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propriedade background</title>
+    <style>
+        
+        body {
+            margin: 0 auto;
+            width: 50%; /* Ajuste a largura conforme necessário */
+        }
+
+        .exemplo {
+            width: 300px;
+            height: 300px;
+            border: 15px dashed gray;
+            background: url(./img/montanha.jpg)
+            top center/* Posiciona a imagem no topo e centraliza horizontalmente */ no-repeat/* Não repete a imagem */ fixed/* Imagem de fundo fixa */ padding-box/* Imagem de fundo começa a partir da borda interna do elemento */
+            content-box/* Imagem de fundo começa a partir do conteúdo do elemento */ green;
+            background-size: cover;
+            padding: 30px;
+            color: white;
+            
+        }
+
+    
+    </style>
+</head>
+<body>
+    <h1>Propriedade background</h1>
+    <p>
+        A propriedade <code>background</code> é uma propriedade abreviada que define todas as propriedades de fundo em uma única declaração.	</p>
+    
+    <h2>Valores</h2>
+    <p>
+        A propriedade <code>background</code> aceita os seguintes valores:
+    </p>
+    <ul>
+        <li><code>background-color</code></li>
+        <li><code>background-image</code></li>
+        <li><code>background-repeat</code></li>
+        <li><code>background-attachment</code></li>
+        <li><code>background-position</code></li>
+    </ul>
+    
+    <h2>Exemplo</h2>
+
+    <div class="exemplo">
+    </div>
+
+    
+
+    <br><br>
+ 
+</body>
+</html>

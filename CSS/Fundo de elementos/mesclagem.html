@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem</title>
+    <style>
+        body{
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            width: 50%;
+        }
+
+        div{
+            margin-bottom: 30px;
+        }
+
+        .exemplo{
+            width: 300px;
+            height: 300px;
+            border: 15px dashed palegreen;
+            padding: 30px;
+            background-color: lightblue;
+            background-image: url(./img/montanha.jpg);
+            background-blend-mode: multiply;
+        }
+
+        p{
+            font-size: 1.2em;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>background-blend-mode</h1>
+    <p>    
+        A propriedade background-blend-mode define como as imagens de fundo de um elemento são mescladas entre si e com a cor de fundo do elemento.
+    </p>
+
+    <h2>Valores</h2>
+
+    <ul>
+        <li>normal</li>
+        <li>multiply</li>
+        <li>screen</li>
+        <li>overlay</li>
+        <li>darken</li>
+        <li>lighten</li>
+        <li>color-dodge</li>
+        <li>color-burn</li>
+        <li>hard-light</li>
+        <li>soft-light</li>
+        <li>difference</li>
+        <li>exclusion</li>
+        <li>hue</li>
+        <li>saturation</li>
+        <li>color</li>
+        <li>luminosity</li>
+    </ul>
+    <br>
+    <div class="exemplo"></div>
+    
+</body>
+</html>

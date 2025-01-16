@@ -11,25 +11,47 @@
         }
 
         h1{
-            background-color: lightgreen;
-            border-radius: 5px;
-            color: lightslategray;
+            background-color: lightgreen;/* Cor de fundo */
+            border-radius: 5px;/* Borda arredondada */
+            color: lightslategray;/* Cor do texto */
         }
 
         h2{
-            background-color: lightblue;
-            border-radius: 5px;
-            color: lightslategray;
+            background-color: lightblue;/* Cor de fundo */
+            border-radius: 5px;/* Borda arredondada */
+            color: lightslategray;/* Cor do texto */
         }
 
         code{
-            background-color: yellow;
+            background-color: yellow;/* Cor de fundo */
         }
 
         p{
-            line-height: 1.5;
-            font-size: arial sans-serif; 
-            color: #666;
+            line-height: 1.5;/* Espaçamento entre linhas */
+            font-size: arial sans-serif; /* Fonte */
+            color: #666;/* Cor do texto */
+        }
+
+        .exemplo{
+            width: 300px;/* Largura */
+            height: 300px;/* Altura */
+            padding: 30px;/* Preenchimento */
+            font-size: 40px;/* Tamanho da fonte */
+            border: 15px dashed rgb(12, 184, 187);/* Borda */
+            background-color: lightblue;/* Cor de fundo */
+            
+        }
+
+        #padding-box{
+            background-clip: padding-box;/* Define a área de exibição da imagem de fundo */
+        }
+
+        #border-box{
+            background-clip: border-box;/* Define a área de exibição da imagem de fundo */
+        }
+
+        #content-box{
+            background-clip: content-box;/* Define a área de exibição da imagem de fundo */
         }
 
 
@@ -51,20 +73,29 @@
     </p>
 
 
-    <h2>background-clip: border-box;</h2>
-    <p>
-        Se você definir a propriedade background-clip como <code>border-box</code>, a imagem de fundo será cortada para caber nas bordas da caixa de bordas.</p>
+    
 
     <h2>background-clip: padding-box;</h2>
     <p>
         Se você definir a propriedade background-clip como <code>padding-box</code>, a imagem de fundo será cortada para caber nas bordas da caixa de preenchimento.
     </p>
+    
+        <div id="padding-box" class="exemplo"></div>
+
+    <h2>background-clip: border-box;</h2>
+    <p>
+        Se você definir a propriedade background-clip como <code>border-box</code>, a imagem de fundo será cortada para caber nas bordas da caixa de bordas.</p>
+
+        <div id="border-box" class="exemplo"></div>
+
 
     <h2>background-clip: content-box;</h2>
     <p>
         Se você definir a propriedade background-clip como <code>content-box</code>, a imagem de fundo será cortada para caber nas bordas da caixa de conteúdo.
     </p>
+
+        <div id="content-box" class="exemplo"></div>
     
-    
+    <br><br>
 </body>
 </html>
